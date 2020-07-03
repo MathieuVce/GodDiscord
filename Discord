@@ -5,9 +5,6 @@ from dotenv import load_dotenv
 load_dotenv()
 import os
 
-
-
-
 client = discord.Client()
 prefix = '!'
 connection = ''
@@ -22,8 +19,8 @@ async def switch_voice (message, command):
     global connection, dispatcher
     argument = command.split()[0]
     if argument == str(prefix + "join"):
-        voice_channel = message.author.voice.channel
         if message.author.voice:
+            voice_channel = message.author.voice.channel
             connection = await voice_channel.connect()
             await message.channel.send("Je rejoins votre salon vocal.")
         else:
