@@ -143,4 +143,4 @@ async def on_message(message):
         # print(f"{message.channel}: {message.author}: {message.author.name}: {message.content}")
         await switch_cases(message)
     
-client.run("NzI1MjU4OTczOTc2MTk5MjE5.Xv73MQ.4VA-SkEi0Udsm0-MNwWN7J4Yc4w")
+client.run("TOKEN")
