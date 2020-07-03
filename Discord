@@ -11,7 +11,6 @@ dispatcher = ''
 @client.event
 async def on_ready():
     print(f"We have logged in as {client.user}")
-    client.get_channel()
 
 async def switch_voice (message, command):
     global connection, dispatcher
@@ -144,4 +143,4 @@ async def on_message(message):
         # print(f"{message.channel}: {message.author}: {message.author.name}: {message.content}")
         await switch_cases(message)
     
-client.run("TOKEN")
+client.run("NzI1MjU4OTczOTc2MTk5MjE5.XvWoDQ.oKGEhd-Tae72--OCshqBcaR-brM")
