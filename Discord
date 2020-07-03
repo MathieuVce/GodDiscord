@@ -59,7 +59,7 @@ def get_available_commands(message):
 async def switch_message(message, command):
     commandArray, toExecute = get_available_commands(message)
     
-    argument = "".join(list(command)[1:])
+    argument = "".join(list(command)[1:]).split(' ')[0]
     if argument in commandArray:
         await message.channel.send(toExecute[commandArray.index(argument)])
 
@@ -143,4 +143,4 @@ async def on_message(message):
         # print(f"{message.channel}: {message.author}: {message.author.name}: {message.content}")
         await switch_cases(message)
     
-client.run("NzI1MjU4OTczOTc2MTk5MjE5.XvWoDQ.oKGEhd-Tae72--OCshqBcaR-brM")
+client.run("NzI1MjU4OTczOTc2MTk5MjE5.Xv73MQ.4VA-SkEi0Udsm0-MNwWN7J4Yc4w")
